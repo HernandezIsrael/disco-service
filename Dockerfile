@@ -5,9 +5,6 @@ FROM maven:3.8.4-openjdk-17
 # Set the working directory inside the container
 WORKDIR /app
 
-# CON LA SIGUIENTE INSTRUCCIÓN COMPILAMOS LA APLICACIÓN
-RUN mvn clean install
-
 # Copy the JAR file from the target directory into the container
 COPY target/notificacion-service-0.0.1-SNAPSHOT.jar /app/app.jar
 
